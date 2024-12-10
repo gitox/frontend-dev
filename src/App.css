@@ -1,0 +1,65 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.div-align-center{
+  text-align: center;
+  display:block;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  grid-column-gap: 10px;
+}
+
+.card {
+  border-radius: 25px;
+  background: #6d913b;
+  padding: 10px;
+  width: 200px;
+  height: 270px;
+  text-align: center;
+  display:block;
+}
+
+.img-card{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 95%;
+  border-radius: 50%;
+}
+
+.logo{
+  vertical-align: middle;
+}
+
+.vignetteRecette{
+  display:flex;
+  background: #6d913b;
+  margin-left: 40px;
+  padding: 10px;
+  width: 95%;
+  height: 400px;
+  border-radius: 25px;
+  text-align:left;
+
+}
+
+.left{
+  width: 40%;
+  /*background: yellow;*/
+}
+.right{
+  width: 60%;
+  text-align: left;
+  /*background: orange;*/
+}
+
+.vignetteRecetteImg{
+  width: 80%;
+  border-radius: 15px;
+}
