@@ -1,7 +1,7 @@
 export const recipes = [
     {
       "id": 1,
-      "nom": "Quiche Lorraine",
+      "nom": "Quiche Lorraine dont tu me diras des nouvelles !",
       "image": "https://img.freepik.com/photos-gratuite/quiche-pour-petit-dejeuner-est-posee-planche-decouper-tomates-du-brocoli-cote_188544-18109.jpg",
       "ingredients": [
         {"nom": "pâte brisée", "quantite": "1", "unite": "pièce"},

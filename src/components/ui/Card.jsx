@@ -5,9 +5,8 @@ export const Card = ({ recipes }) => {
 
   return (
     <>
-      <span className="">{nom}
       <img className="img-card" src={image} />
-      </span>
+      <div className="platDuJour">{nom} </div>
       
       {/* Préparation/cuisson/difficulté */}
        <ul className="mise-en-oeuvre">
@@ -16,7 +15,7 @@ export const Card = ({ recipes }) => {
           {temps_preparation.substring(0, 2).concat("'")}
         </li>
         <li>
-          <img src={getImageUrl("oven.png")} alt="temps_cuisson" className="logo" />
+          <img src={getImageUrl("oven02.png")} alt="temps_cuisson" className="logo" />
           {temps_cuisson.substring(0, 2).concat("'")}
         </li>
         <li>
