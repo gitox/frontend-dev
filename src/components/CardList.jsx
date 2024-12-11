@@ -7,15 +7,11 @@ export const CardList = ({ onClick }) => {
 
   const mapRecipes = () =>
     recipes.map((recette) => (
-      <li onClick={() => onClick(recette)} key={recette.id}>
+      <div className="card" onClick={() => onClick(recette)} key={recette.id}>
         <Card recipes={recette} />
         <DayOfTheWeek weekday={inc++} />
-      </li>
+      </div>
     ));
 
-  return (
-    <div className="week-recipe">
-      <ul>{mapRecipes()}</ul>
-    </div>
-  );
+  return <div className="week-recipe">{mapRecipes()}</div>;
 };

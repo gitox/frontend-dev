@@ -9,10 +9,11 @@ function App() {
   const majVignetteRecette = (recipe) => setRecipe(recipe);
 
   return (
-    <div className="container">
+    <>
+      {/* <header>Recette de la semaine</header> */}
       <CardList onClick={majVignetteRecette} />
       <VignetteRecette recipe={recipe} />
-    </div>
+    </>
   );
 }
 

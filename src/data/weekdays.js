@@ -1,1 +1,1 @@
-export const weekdays = ["Lundi", "Mardi","Mercredi","Jeudi","Vendredi"];
+export const weekdays = ["Lundi", "Mardi","Mercredi","Jeudi","Vendredi", "Samedi"];
