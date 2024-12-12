@@ -5,7 +5,7 @@ import { weekdays } from "../data/weekdays";
 
 export const CardList = ({ onClick }) => {
   const recipes4TheWeek = recipes.slice(0, weekdays.length);
-
+  
   const mapRecipes = () =>
     recipes4TheWeek.map((recette, index) => (
       <div className="card" onClick={() => onClick(recette)} key={recette.id}>

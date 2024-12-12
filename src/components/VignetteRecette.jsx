@@ -1,13 +1,15 @@
 export const VignetteRecette = ({ recipe }) => {
-  const { nom, image, ingredients, etape } = recipe;
-
-  if (nom === undefined) {
+    // if (nom === undefined) {
+  if (recipe === null || recipe === undefined) {
     return (
       <div className="vignetteRecetteVide">
         Selectionnez la recette du jour !
       </div>
     );
   }
+console.log("VignetteRecette",recipe);
+
+  const { nom, image, ingredients, etape } = recipe;
 
   return (
     /* Intitulé et vignette de la recette */
