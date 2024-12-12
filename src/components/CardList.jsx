@@ -1,15 +1,16 @@
 import { Card } from "./ui/Card";
 import { recipes } from "../data/recipes";
 import { DayOfTheWeek } from "./ui/DayOfTheWeek";
+import { weekdays } from "../data/weekdays";
 
 export const CardList = ({ onClick }) => {
-  let inc = 0;
+  const recipes4TheWeek = recipes.slice(0, weekdays.length);
 
   const mapRecipes = () =>
-    recipes.map((recette) => (
+    recipes4TheWeek.map((recette, index) => (
       <div className="card" onClick={() => onClick(recette)} key={recette.id}>
         <Card recipes={recette} />
-        <DayOfTheWeek weekday={inc++} />
+        <DayOfTheWeek weekday={index++} />
       </div>
     ));
 

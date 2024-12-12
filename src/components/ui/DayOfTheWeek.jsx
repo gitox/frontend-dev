@@ -1,5 +1,8 @@
 import { weekdays } from "../../data/weekdays";
 
-export const DayOfTheWeek = (props) => {
-  return <p className="weekday">{weekdays[props.weekday]}</p>;
+export const DayOfTheWeek = ({weekday}) => {
+  
+  return weekday < 6 && <p className="weekday">
+      {weekdays[weekday]}
+    </p>;
 };

@@ -4,10 +4,15 @@ import { VignetteRecette } from "./components/VignetteRecette";
 
 import "./App.css";
 import { getImageUrl } from "./lib/utils/image";
+import { useEffect } from "react";
 
 function App() {
   const [recipe, setRecipe] = useState({});
   const majVignetteRecette = (recipe) => setRecipe(recipe);
+
+  useEffect(()=> {
+    
+  },[]);
 
   return (
     <>

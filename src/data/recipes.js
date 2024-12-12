@@ -1,7 +1,7 @@
 export const recipes = [
     {
       "id": 1,
-      "nom": "Quiche Lorraine dont tu me diras des nouvelles !",
+      "nom": "Quiche Lorraine",
       "image": "https://img.freepik.com/photos-gratuite/quiche-pour-petit-dejeuner-est-posee-planche-decouper-tomates-du-brocoli-cote_188544-18109.jpg",
       "ingredients": [
         {"nom": "pâte brisée", "quantite": "1", "unite": "pièce"},
@@ -106,6 +106,28 @@ export const recipes = [
     },
     {
       "id": 6,
+      "nom": "Soupe de légumes",
+      "image": "https://img.freepik.com/photos-gratuite/vue-rapprochee-du-delicieux-repas-noel_23-2151888331.jpg?t=st=1733912031~exp=1733915631~hmac=7bc7799622f2af57a5c92800bcf72c08830c9610ca1132c028d1f777b8d93e94&w=1380",
+      "ingredients": [
+        {"nom": "carottes", "quantite": "3", "unite": "pièces"},
+        {"nom": "pommes de terre", "quantite": "2", "unite": "pièces"},
+        {"nom": "poireau", "quantite": "1", "unite": "pièce"},
+        {"nom": "bouillon de légumes", "quantite": "1", "unite": "litre"},
+        {"nom": "huile d'olive", "quantite": "1", "unite": "cuillère à soupe"}
+      ],
+      "etape": [
+        "Épluchez et coupez les légumes en morceaux.",
+        "Faites chauffer l'huile d'olive dans une casserole et faites revenir les légumes pendant 5 minutes.",
+        "Ajoutez le bouillon de légumes et laissez mijoter à feu moyen pendant 20 minutes.",
+        "Mixez la soupe jusqu'à obtenir une texture veloutée.",
+        "Servez chaud avec des croûtons ou une touche de crème fraîche."
+      ],
+      "temps_preparation": "15 minutes",
+      "temps_cuisson": "25 minutes",
+      "difficulte": "facile"
+    },
+    {
+      "id": 7,
       "nom": "Soupe de légumes",
       "image": "https://img.freepik.com/photos-gratuite/vue-rapprochee-du-delicieux-repas-noel_23-2151888331.jpg?t=st=1733912031~exp=1733915631~hmac=7bc7799622f2af57a5c92800bcf72c08830c9610ca1132c028d1f777b8d93e94&w=1380",
       "ingredients": [
