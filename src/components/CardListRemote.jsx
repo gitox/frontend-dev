@@ -38,7 +38,7 @@ export const CardListRemote = ({ onClick }) => {
 
   const recipes = data.recipes;
   const recipes4TheWeek = recipes.slice(0, weekdays.length);
-  
+  console.log("recipes4theweek",recipes4TheWeek)
   const mapRecipes = () =>
     recipes4TheWeek.map((recette, index) => (
       <div className="card" onClick={() => onClick(recette)} key={recette.id}>
@@ -46,8 +46,6 @@ export const CardListRemote = ({ onClick }) => {
         <DayOfTheWeek weekday={index++} />
       </div>
     ));
-
-  console.log(onclick);
 
   return <div className="week-recipe">{mapRecipes()}</div>;
 };

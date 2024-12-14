@@ -1,7 +1,9 @@
 import { getImageUrl } from "../../lib/utils/image";
+import { FeatureList } from "./FeatureList";
 
 export const Card = ({ recipes }) => {
   const { name, image, prepTimeMinutes, cookTimeMinutes, difficulty } = recipes;
+  const caracteristiques = [prepTimeMinutes, cookTimeMinutes, difficulty];
 
   return (
     <>
@@ -9,32 +11,7 @@ export const Card = ({ recipes }) => {
       <div className="platDuJour">{name}</div>
 
       {/* Préparation/cuisson/difficulté */}
-      <ul className="mise-en-oeuvre">
-        <li>
-          <img
-            src={getImageUrl("cooking.png")}
-            alt="temps_preparation"
-            className="logo"
-          />
-          {prepTimeMinutes}
-        </li>
-        <li>
-          <img
-            src={getImageUrl("oven02.png")}
-            alt="temps_cuisson"
-            className="logo"
-          />
-          {cookTimeMinutes}
-        </li>
-        <li>
-          <img
-            src={getImageUrl("difficulty.png")}
-            alt="difficulte"
-            className="logo"
-          />
-          {difficulty}
-        </li>
-      </ul>
+      <FeatureList caracteristiques={caracteristiques} />
     </>
   );
 };

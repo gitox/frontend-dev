@@ -1,5 +1,5 @@
 export const VignetteRecette = ({ recipe }) => {
-    // if (nom === undefined) {
+  // if (nom === undefined) {
   if (recipe === null || recipe === undefined) {
     return (
       <div className="vignetteRecetteVide">
@@ -7,33 +7,29 @@ export const VignetteRecette = ({ recipe }) => {
       </div>
     );
   }
-console.log("VignetteRecette",recipe);
 
-  const { nom, image, ingredients, etape } = recipe;
+  console.log("VignetteRecette", recipe);
+  const { name, image, ingredients, instructions } = recipe;
 
   return (
     /* Intitulé et vignette de la recette */
     <div className="vignetteRecette">
       <div className="left">
-        <img src={image} alt={nom} className="vignetteRecetteImg" />
-        <div className="bottom-left">{nom}</div>
+        <img src={image} alt={name} className="vignetteRecetteImg" />
+        <div className="bottom-left">{name}</div>
       </div>
 
       <div className="right">
         Ingrédients :
         <ul>
-          {ingredients.map((ingredient, index) => {
-            return (
-              <li key={index}>
-                {ingredient.nom} : {ingredient.quantite} {ingredient.unite}
-              </li>
-            );
-          })}
+          {ingredients.map((ingredient, index) => (
+            <li key={index}>{ingredient}</li>
+          ))}
         </ul>
         Etapes :
         <ol>
-          {etape.map((item, index) => (
-            <li key={index}>{item}</li>
+          {instructions.map((instruction, index) => (
+            <li key={index}>{instruction}</li>
           ))}
         </ol>
       </div>

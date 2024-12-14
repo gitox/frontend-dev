@@ -20,12 +20,13 @@ function App() {
   //     majVignetteRecette(recipes[presentDay]);
   //   }
   // }
+console.log(recipe);
 
 
   return (
     <>
       <Header />
-      <CardListRemote recipes={majVignetteRecette} />
+      <CardListRemote onClick={majVignetteRecette} />
       <VignetteRecette recipe={recipe} />
     </>
   );
