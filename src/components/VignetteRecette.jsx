@@ -1,5 +1,9 @@
+import { recetteDuJour } from "../lib/utils/recipe";
+
 export const VignetteRecette = ({ recipe }) => {
-  // if (nom === undefined) {
+  /* Affiche la recette du jour */
+  recipe = recetteDuJour(recipe);
+
   if (recipe === null || recipe === undefined) {
     return (
       <div className="vignetteRecetteVide">
@@ -8,8 +12,8 @@ export const VignetteRecette = ({ recipe }) => {
     );
   }
 
-  console.log("VignetteRecette", recipe);
   const { name, image, ingredients, instructions } = recipe;
+  // console.log("VignetteRecette", recipe);
 
   return (
     /* Intitulé et vignette de la recette */

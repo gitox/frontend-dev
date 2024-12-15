@@ -1,17 +1,20 @@
-import { getImageUrl } from "../../lib/utils/image";
-import { FeatureList } from "./FeatureList";
+import { FeatureList } from "../FeatureList";
 
-export const Card = ({ recipes }) => {
-  const { name, image, prepTimeMinutes, cookTimeMinutes, difficulty } = recipes;
+export const Card = ( props ) => {
+  console.log(props);
+  
+  const { name, image, prepTimeMinutes, cookTimeMinutes, difficulty } = props.recipes;
   const caracteristiques = [prepTimeMinutes, cookTimeMinutes, difficulty];
 
   return (
     <>
-      <img className="img-card" src={image} />
+      <span className="img-card-over">
+      </span>
+        <img className="img-card" src={image} />
       <div className="platDuJour">{name}</div>
 
       {/* Préparation/cuisson/difficulté */}
-      <FeatureList caracteristiques={caracteristiques} />
+      <FeatureList {...caracteristiques} />
     </>
   );
 };
